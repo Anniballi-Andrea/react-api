@@ -29,7 +29,7 @@ function App() {
 
             {
               actress.map((el) => (
-                <div className="col col-sm-4">
+                <div className="col col-sm-3">
                   <div className="card">
                     <img src={el.image} alt="" />
                   </div>

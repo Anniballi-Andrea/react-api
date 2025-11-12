@@ -7,6 +7,7 @@ header {
 
 main {
     background-color: lightseagreen;
+    padding-bottom: 3rem;
 }
 
 .card {
@@ -33,7 +34,7 @@ main {
     border-top: 0;
     border-bottom-right-radius: 6px !important;
     border-bottom-left-radius: 6px !important;
-    min-height: 300px;
+    min-height: 350px;
 
     div {
         padding: 6px 12px;
