@@ -1,10 +1,19 @@
-export default function AllActors({ allActors }) {
+import { useState } from "react"
 
+export default function AllActors({ allActors }) {
+    function mostFamus() {
+        if (el.most_famous_movies !== undefined) {
+            return console.log(el.most_famous_movies)
+        } else if (known_for !== undefined) {
+            return console.log(el.known_for)
+        }
+
+    }
 
 
     return (
-        allActors.map((el) => (
-            <div className="col col-sm-3">
+        allActors.map((el, i) => (
+            <div key={i} className="col col-sm-3">
                 <div className="card">
                     <img src={el.image} alt="" />
                 </div>
