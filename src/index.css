@@ -39,6 +39,10 @@ main {
     div {
         padding: 6px 12px;
     }
+
+    span {
+        font-weight: bold;
+    }
 }
 
 .bgc_same {
