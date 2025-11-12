@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect } from "react";
 import { useState } from "react";
+import Actress from "./components/Actress";
 
 function App() {
   const [actress, setActress] = useState([])
@@ -25,10 +26,10 @@ function App() {
       <main>
         <div className="container">
           <div className="row  g-3">
-
+            <Actress actress={actress} />
 
             {
-              actress.map((el) => (
+              /*actress.map((el) => (
                 <div className="col col-sm-3">
                   <div className="card">
                     <img src={el.image} alt="" />
@@ -41,7 +42,7 @@ function App() {
                     <div><strong>Awards:</strong> {el.awards}</div>
                   </div>
                 </div>
-              ))
+              ))*/
             }
 
 
