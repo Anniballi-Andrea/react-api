@@ -17,6 +17,30 @@ function App() {
 
   return (
     <>
+      <header>
+        <div className="container">
+          <h1>list of actress</h1>
+        </div>
+      </header>
+      <main>
+        <div className="container">
+          <div className="row row-col-md-3 g-3">
+
+
+            {
+              actress.map((el) => (
+                <div className="col">
+                  <div className="card">
+                    <img src={el.image} alt="" />
+                  </div>
+                </div>
+              ))
+            }
+
+
+          </div>
+        </div>
+      </main>
 
     </>
   )
