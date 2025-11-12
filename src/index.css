@@ -1,16 +1,41 @@
 @import url('bootstrap');
 
+header {
+    min-height: 5rem;
+    background-color: lightcoral;
+}
+
+main {
+    background-color: lightseagreen;
+}
 
 .card {
     height: 400px;
     overflow: hidden;
     background-color: lightblue;
-
+    border-bottom-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border: 1px solid lightslategray;
+    border-bottom: 0;
 
     img {
         max-width: 100%;
         min-height: 100%;
         object-fit: cover;
 
+
+    }
+}
+
+.card-body {
+    background-color: lightblue !important;
+    border: 1px solid lightslategray;
+    border-top: 0;
+    border-bottom-right-radius: 6px !important;
+    border-bottom-left-radius: 6px !important;
+    min-height: 300px;
+
+    div {
+        padding: 6px 12px;
     }
 }
