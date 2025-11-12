@@ -2,17 +2,48 @@ import axios from "axios";
 import { useEffect } from "react";
 import { useState } from "react";
 import Actress from "./components/Actress";
+import Actors from "./components/AllActors";
+import AllActors from "./components/AllActors";
 
 function App() {
   const [actress, setActress] = useState([])
+  const [actors, setActors] = useState([])
+  const [allActors, setAllActors] = useState([])
 
-  function fetchActress() {
+  function fetchAllActors() {
+    axios.get("https://lanciweb.github.io/demo/api/actresses/")
+      .then((res) => setActress(res.data))
+
+    axios.get("https://lanciweb.github.io/demo/api/actors/")
+      .then((res) => setActors(res.data))
+
+
+
+
+  }
+  useEffect(fetchAllActors, [])
+  /*function fetchActress() {
     axios.get("https://lanciweb.github.io/demo/api/actresses/")
       .then((res) => setActress(res.data))
 
 
   }
+  function fetchActors() {
+    axios.get("https://lanciweb.github.io/demo/api/actors/")
+      .then((res) => setActors(res.data))
+
+
+  }
   useEffect(fetchActress, [])
+
+  useEffect(fetchActors, [])*/
+  useEffect(() => {
+
+    setAllActors([...actress, ...actors])
+    console.log(allActors)
+  }, [actress, actors])
+  //console.log(actress)
+  //console.log(actors)
 
   //console.log(actress)
 
@@ -26,9 +57,10 @@ function App() {
       <main>
         <div className="container">
           <div className="row  g-3">
-            <Actress actress={actress} />
+            <AllActors allActors={allActors} />
 
-            {
+
+            {//<Actors actors={actors} />
               /*actress.map((el) => (
                 <div className="col col-sm-3">
                   <div className="card">
