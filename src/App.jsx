@@ -24,15 +24,16 @@ function App() {
       </header>
       <main>
         <div className="container">
-          <div className="row row-col-md-3 g-3">
+          <div className="row  g-3">
 
 
             {
               actress.map((el) => (
-                <div className="col">
+                <div className="col col-sm-4">
                   <div className="card">
                     <img src={el.image} alt="" />
                   </div>
+
                 </div>
               ))
             }

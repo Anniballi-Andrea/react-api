@@ -1,1 +1,16 @@
 @import url('bootstrap');
+
+
+.card {
+    height: 400px;
+    overflow: hidden;
+    background-color: lightblue;
+
+
+    img {
+        max-width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+
+    }
+}
