@@ -1,8 +1,6 @@
 import axios from "axios";
 import { useEffect } from "react";
 import { useState } from "react";
-import Actress from "./components/Actress";
-import Actors from "./components/AllActors";
 import AllActors from "./components/AllActors";
 
 function App() {
@@ -40,7 +38,7 @@ function App() {
   useEffect(() => {
 
     setAllActors([...actress, ...actors])
-    console.log(allActors)
+    //console.log(allActors)
   }, [actress, actors])
   //console.log(actress)
   //console.log(actors)
@@ -51,7 +49,7 @@ function App() {
     <>
       <header>
         <div className="container">
-          <h1>list of actress</h1>
+          <h1>list of actors</h1>
         </div>
       </header>
       <main>

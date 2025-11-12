@@ -34,9 +34,15 @@ main {
     border-top: 0;
     border-bottom-right-radius: 6px !important;
     border-bottom-left-radius: 6px !important;
-    min-height: 350px;
+    min-height: 500px;
 
     div {
         padding: 6px 12px;
     }
+}
+
+.bgc_same {
+    background-color: lightblue;
+    border: 0;
+    padding: 0;
 }
